@@ -120,6 +120,10 @@ class SequenceAnimation {
         "There was no animatable with the key: $key");
     return _animations[key];
   }
+
+  bool isAnimationExists(Object key) {
+    return _animations.containsKey(key);
+  }
 }
 
 /// Evaluates [animatable] if the animation is in the time-frame of [begin] (inclusive) and [end] (inclusive),
